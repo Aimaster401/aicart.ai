@@ -1,0 +1,17 @@
+# robots.txt for https://www.example.com/
+
+User-agent: *
+Disallow: /cgi-bin/
+Disallow: /tmp/
+Disallow: /private/
+Disallow: /admin/
+Disallow: /login/
+Disallow: /cart/
+Disallow: /checkout/
+
+Allow: /public/
+Allow: /images/
+Allow: /css/
+Allow: /js/
+
+Sitemap: https://aimaster401.github.io/aicart.ai/sitemap.xml
