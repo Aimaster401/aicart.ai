@@ -7,21 +7,39 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://aimaster401.github.io/aicart.ai/free-tools.html</loc>
-    <lastmod>2025-05-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://aimaster401.github.io/aicart.ai/paid-tools.html</loc>
-    <lastmod>2025-05-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://aimaster401.github.io/aicart.ai/contact.html</loc>
+    <loc>https://aimaster401.github.io/aicart.ai/about.html</loc>
     <lastmod>2025-05-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://aimaster401.github.io/aicart.ai/chatgpt.html</loc>
+    <lastmod>2025-05-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aimaster401.github.io/aicart.ai/copyai.html</loc>
+    <lastmod>2025-05-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aimaster401.github.io/aicart.ai/freetools.html</loc>
+    <lastmod>2025-05-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://aimaster401.github.io/aicart.ai/midjourney.html</loc>
+    <lastmod>2025-05-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://aimaster401.github.io/aicart.ai/paidtools.html</loc>
+    <lastmod>2025-05-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
 </urlset>
