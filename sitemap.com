@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://yourusername.github.io/aicart/</loc>
+    <priority>1.00</priority>
+  </url>
+  <url>
+    <loc>https://yourusername.github.io/aicart/freetools.html</loc>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://yourusername.github.io/aicart/paidtools.html</loc>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://yourusername.github.io/aicart/contact.html</loc>
+    <priority>0.64</priority>
+  </url>
+</urlset>
