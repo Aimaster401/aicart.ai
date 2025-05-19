@@ -14,4 +14,7 @@ Allow: /images/
 Allow: /css/
 Allow: /js/
 
-Sitemap: https://aimaster401.github.io/aicart.ai/sitemap.xml
+Sitemap: User-agent: *
+Allow: /
+
+Sitemap: https://aicart-ai.github.io/aicart.ai/sitemap.xml
