@@ -85,6 +85,78 @@ body {
   color: #00ffe7;
   padding-left: 10px;
 }
+/*========content dropdown========*/
+.content-dropdown {
+  position: absolute;
+  top: 70px; /* navbar ke neeche */
+  right: 20px;
+  z-index: 1000;
+}
+
+.content-dropdown i {
+  font-size: 24px;
+  cursor: pointer;
+  color: #00ffe7;
+  background-color: #1a1a2e;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px #00ffe750;
+}
+
+.content-dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: #1a1a2e;
+  min-width: 200px;
+  max-height: 160px;
+  overflow-y: auto;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+  z-index: 1;
+  border-radius: 8px;
+}
+
+.content-dropdown-content a {
+  color: #fff;
+  padding: 10px 14px;
+  text-decoration: none;
+  display: block;
+}
+
+.content-dropdown-content a:hover {
+  background-color: #00ffe730;
+}
+.content-dropdown {
+  position: fixed;  /* SCROLL KE SAATH NA CHALE */
+  top: 70px;         /* navbar ke just neeche */
+  right: 20px;
+  z-index: 1000;
+}
+.dropdown-content {
+  display: none;
+  flex-direction: column;
+  background-color: #1a1a2e;
+  border: 1px solid #00ffe7;
+  border-radius: 8px;
+  max-height: 250px; /* yahan aap height control kar sakte ho */
+  overflow-y: auto; /* Scroll enable karega */
+  padding: 10px;
+  box-shadow: 0 0 10px #00ffe7aa;
+  scrollbar-color: #00ffe7 #1a1a2e; /* Firefox ke liye */
+  scrollbar-width: auto;           /* Firefox ke liye */
+}
+.dropdown-content::-webkit-scrollbar {
+  width: 12px;
+}
+.dropdown-content::-webkit-scrollbar-thumb {
+  background: #00ffe7;
+  border-radius: 6px;
+  border: 2px solid #1a1a2e; /* थोड़ा contrast के लिए */
+}
+
+.dropdown-content::-webkit-scrollbar-track {
+  background: #1a1a2e;
+}
 
 /* ======== Search Box ======== */
 .search-container {
@@ -128,7 +200,56 @@ body {
 #suggestionsList li:hover {
   background-color: #00ffe720;
 }
+/* === Popup Intro Tips === */
+.popup-tip {
+  position: absolute;
+  background-color: #00ffe7;
+  color: #1a1a2e;
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-size: 14px;
+  box-shadow: 0 0 10px #00ffe7;
+  z-index: 9999;
+  opacity: 0;
+  transition: opacity  2s ease-in-out;
+  pointer-events: none;
+}
 
+/* Arrow Styles */
+.popup-arrow {
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+
+.arrow-right1 {
+  top: 50%;
+  right: -10px;
+  transform: translateY(-50%);
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+  border-left: 10px solid #00ffe7;
+}
+
+.arrow-right {
+  top: 50%;
+  right: -10px;
+  transform: translateY(-50%);
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+  border-left: 10px solid #00ffe7;
+}
+
+/* Tip positions */
+#searchTip {
+  top: 6px;
+  right: 90px;
+}
+
+#menuTip {
+  top: 70px;
+  right: 70px;
+}
 /* ======== Tools Grid ======== */
 .tools-section {
   max-width: 1100px;
@@ -179,6 +300,11 @@ body {
 
 .tool-card a:hover {
   background-color: #00e6d2;
+}
+/* === New Tool Card Extra Spacing === */
+.new-tool-card {
+  margin-top: 30px; /* card ke upar space */
+  margin-bottom: 30px; /* card ke neeche space */
 }
 
 /* ======== Tool Detail Page ======== */
@@ -302,4 +428,51 @@ footer {
   color: #666;
   border-top: 1px solid #333;
   padding-top: 15px;
+}
+.intro-section {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.intro-section h2 {
+  color: #00ffe7;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.intro-section p {
+  color: #cccccc;
+  font-size: 16px;
+  line-height: 1.6;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.intro-section,
+.tools-section p {
+  max-width: 100%;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 0px ; /* Dono taraf se space badhane ke लिए */
+  text-align: justify;
+}
+@keyframes fadeSlideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.intro-section {
+  animation: fadeSlideUp 1.2s ease-out forwards;
+}
+.section-description {
+  padding: 0 30px;
+  text-align: justify;
+  line-height: 1.6;
+  font-size: 15px;
 }
